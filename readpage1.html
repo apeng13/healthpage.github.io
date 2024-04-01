@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>了解心脏病的小知识</title>
+    <link rel="stylesheet" type="text/css" href="css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/readpage.css">
+    <style></style>
+    
+</head>
+
+<body>
+    <div class="topbar"> 
+    <a href="index.html" class="iconback"><img src="https://pic.imgdb.cn/item/660828209f345e8d03958aa8.png"></a>
+    <!-- <h1 class="toptitle">了解心脏病的小知识了解心脏病的小知识</h1> -->
+    </div>
+
+    <div><img src="https://pic.imgdb.cn/item/660aa1fe9f345e8d03e0f563.png" class="toppicture">
+    </div> 
+    <div class="upboy"><img src="https://pic.imgdb.cn/item/660a8e8b9f345e8d0365f446.png">
+        <p>健康中国  2024-03-11</p>
+    </div> 
+    <div class="unittitle"><h1>了解心脏病的小知识</h1></div>
+    
+    <script>
+     window.addEventListener('scroll',function(){ 
+     let topbar = document.querySelector('.topbar');
+     if(window.scrollY>0)
+       {topbar.classList.add("change");
+       }
+     else{ topbar.classList.remove("change");
+       }
+     }
+    )
+       
+
+      /*  window.addEventListener('scroll',function(){ 
+     let toptitle = document.querySelector('.toptitle');
+     if(window.scrollY>360)
+       {toptitle.style.visibility="visible"
+       }
+     else{toptitle.style.visibility="hidden"
+       }}) */
+
+       
+    </script>
+
+
+    <div class="content">
+        <h1>什么是心脏病？</h1>
+        <p>心脏病有多种类型，其中最常见的是<a class="annotation">冠状动脉疾病</a>，它会影响血液流向心脏，血流量减少可导致心脏病发作。</p>
+        <h1>心脏病的症状是什么？</h1>
+        <p>有时心脏病可能没有明显症状，直到一个人出现心脏病发作、心力衰竭或心律失常时症状才会被诊断出来，其主要有以下表现：<br />
+            心脏病发作：胸痛或不适，上背部或颈部疼痛，消化不良，胃灼热，恶心或呕吐，极度疲劳，上半身不适，头晕和呼吸急促。<br />
+            心律失常：胸部有颤动的感觉（心悸）。<br />
+            心力衰竭：呼吸急促、疲乏或脚、脚踝、腿部、腹部或颈部静脉肿胀。</p>
+        <h1>心脏病的影响因素有哪些？</h1>
+        <p>高血压、高血液胆固醇和吸烟是心脏病的主要影响因素，也有其他疾病和不良生活方式也会增加人们患心脏病的风险，包括：<br/>
+            <ul>
+            <li>糖尿病</li>
+            <li>超重和肥胖</li>
+            <li>不健康的饮食</li>
+            <li>缺乏身体活动</li>
+            <li>过度饮酒</li>
+           </ul> 
+        </p>   
+    </div>
+
+    <div class="popup">
+        <div class="popbox">
+            <!-- <img src="images\readpage\read_popup.png" class="popcard"> -->
+            <img src="https://pic.imgdb.cn/item/660828209f345e8d03958aa8.png" class="backbutton">
+            <h1 class="poptitle">冠状动脉疾病</h1>
+            <p class="popparagraph">最常见的心脏病类型，也被称为冠心病或缺血性心脏病。它是由动脉血管壁上的斑块积聚引起的，当大量斑块积聚导致动脉变窄时，会阻碍血液流动，从而产生心绞痛、胸痛等症状。</p>
+        </div>
+        
+
+    </div>
+
+    <script>
+        document.querySelector(".annotation").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="flex"
+            document.querySelector("body").style.overflow="hidden"
+        })
+
+        document.querySelector(".backbutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none"
+            document.querySelector("body").style.overflow="visible"
+        })
+    </script>
+
+    </div>  
+
+
+    <div class="bottomtext">已经到底了···</div>
+
+</body>
+
+</html>

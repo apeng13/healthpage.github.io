@@ -1,0 +1,61 @@
+.toppicture{
+    left: 0;
+    top: 0;
+}
+
+.iconback{
+    position: absolute;
+    height: 8.2vw;
+    width: auto;
+    left: 5vw;
+    top: 5vw;
+}
+
+.indexcards{
+    left: 5vw;
+    width: 90vw;      
+}
+
+.indexcard{
+    padding-top:1vw;
+    padding-bottom:1vw;
+    position: relative;
+}
+
+.indexcardtitle{
+    position: absolute;
+    max-width: 55vw;
+    left: 33vw;
+    top: 2vw;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.indexcardcorner{
+    position: absolute;
+    right: 7vw;
+    bottom: 3vw;
+    font-size: 14px;
+    color: #808080;
+    vertical-align: middle;
+       
+}
+
+.indexcardcorner img{
+    height: 19px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.unittitle{
+    text-align: center;
+    font-size: 24px;
+    color: #0038A6;
+    font-weight: 600;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    width: 90vw;
+    left: 5vw;
+}
+

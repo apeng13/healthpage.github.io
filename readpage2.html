@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>抗生素的使用问题与解答</title>
+    <link rel="stylesheet" type="text/css" href="css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/readpage.css">
+    <style></style>
+    
+</head>
+
+<body>
+    <div class="topbar"> 
+    <a href="index.html" class="iconback"><img src="https://pic.imgdb.cn/item/660828209f345e8d03958aa8.png"></a>
+    <!-- <h1 class="toptitle">了解心脏病的小知识了解心脏病的小知识</h1> -->
+    </div>
+
+    <div><img src="https://pic.imgdb.cn/item/660aa2049f345e8d03e11f82.png" class="toppicture">
+    </div> 
+    <div class="upboy"><img src="https://pic.imgdb.cn/item/660aa7f69f345e8d0310de98.png">
+        <p>医学动态  2024-03-11</p>
+    </div> 
+    <div class="unittitle"><h1>抗生素的使用问题与解答</h1></div>
+    
+    <script>
+     window.addEventListener('scroll',function(){ 
+     let topbar = document.querySelector('.topbar');
+     if(window.scrollY>0)
+       {topbar.classList.add("change");
+       }
+     else{ topbar.classList.remove("change");
+       }})
+       
+      /*  window.addEventListener('scroll',function(){ 
+     let toptitle = document.querySelector('.toptitle');
+     if(window.scrollY>360)
+       {toptitle.style.visibility="visible"
+       }
+     else{toptitle.style.visibility="hidden"
+       }}) */
+
+       
+    </script>
+
+
+    <div class="content">
+        <h1>什么是抗生素？</h1>
+        <p>抗生素是治疗细菌感染的药物，它可以杀死细菌或者抑制细菌的生长和繁殖。细菌遍布我们身体内部和外部，大多数细菌是无害的，甚至对人有帮助，但有些细菌会引起感染，如链球菌性咽喉炎。</p>
+        <h1>抗生素可以治疗什么？</h1>
+        <p>抗生素仅治疗由细菌引起的某些感染，例如：<br/>
+            <ul>
+            <li>链球菌性咽喉炎</li>
+            <li>百日咳</li>
+            <li>尿路感染</li>
+            <li>抗生素也能治疗由细菌引起的严重疾病，例如<a class="annotation">败血症</a></li>
+           </ul> 
+        </p> 
+        <h1>抗生素不能治疗什么？</h1>
+        <p>抗生素对病毒不起作用，例如导致以下疾病的病毒：<br/>
+            <ul>
+            <li>感冒并流鼻涕，即粘液很厚，呈黄色或绿色</li>
+            <li>大多数喉咙痛（链球菌性喉炎除外）</li>
+            <li>流感</li>
+            <li>大多数胸部感冒（支气管炎）病例</a></li>
+           </ul> 
+           这些疾病在没有抗生素的情况下可以自行好转，服用抗生素不会帮助你，而它们的副作用仍然会对身体造成伤害。
+
+        </p> 
+        <h1>抗生素的副作用是什么？</h1>
+        <p>任何时候使用抗生素都会引起副作用。常见的副作用范围可能从轻微到非常严重，包括：皮疹、恶心、腹泻、酵母菌感染等。</p>  
+    </div>
+
+    <div class="popup">
+        <div class="popbox">
+            <!-- <img src="images\readpage\read_popup.png" class="popcard"> -->
+            <img src="https://pic.imgdb.cn/item/660828209f345e8d03958aa8.png" class="backbutton">
+            <h1 class="poptitle">败血症</h1>
+            <p class="popparagraph">败血症是指细菌侵入血液循环中生长繁殖引起的急性全身性感染，常危及生命。导致败血症的感染最常始于肺部、尿路、皮肤或胃肠道。如果不及时治疗，败血症会迅速导致组织损伤、器官衰竭和死亡。</p>
+        </div>
+        
+
+    </div>
+
+    <script>
+        document.querySelector(".annotation").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="flex"
+            document.querySelector("body").style.overflow="hidden"
+        })
+
+        document.querySelector(".backbutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none"
+            document.querySelector("body").style.overflow="visible"
+        })
+    </script>
+
+    </div>  
+
+
+    <div class="bottomtext">已经到底了···</div>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>健康资讯平台</title>
+    <link rel="stylesheet" type="text/css" href="css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+    <style></style>
+</head>
+
+<body>
+  <div class="topbar"> <img src="https://pic.imgdb.cn/item/6608c5c59f345e8d032c43d0.png" class="indexinput"> </div>
+  <div class="indextitlecard"> <img src="https://pic.imgdb.cn/item/660a8e629f345e8d03650121.png" class="index_titlecard"> </div>
+  <div class="indexslideshow">
+    <ul>
+      <li><div><a href="lunbopage3.html"><img src="https://pic.imgdb.cn/item/660a90309f345e8d036fe7ae.png"></a></li>
+      <li><a href="lunbopage1.html"><img src="https://pic.imgdb.cn/item/660a90319f345e8d036febd7.png"></a></li>
+      <li><a href="lunbopage2.html"><img src="https://pic.imgdb.cn/item/660a902f9f345e8d036fe4ff.png"></a></li>
+      <li><a href="lunbopage3.html"><img src="https://pic.imgdb.cn/item/660a90309f345e8d036fe7ae.png"></a></li>
+      <li><a href="lunbopage1.html"><img src="https://pic.imgdb.cn/item/660a90319f345e8d036febd7.png"></a></li>
+    </ul>
+    <ol>
+      <li class="slidedot"></li>
+      <li></li>
+      <li></li>
+  </ol>
+  </div>
+  <div class="indextitlecard"> <img src="https://pic.imgdb.cn/item/660a8e629f345e8d03650178.png" class="index_titlecard"> </div>
+  
+  <script type="text/javascript">
+    window.addEventListener('load', function () {
+      var slideshows = document.querySelector('.indexslideshow');
+      var ul = slideshows.children[0];
+      var ol = slideshows.children[1];
+      var showswidth = slideshows.offsetWidth;
+      var index = 0;
+      
+      var timer = setInterval(function () {
+        index++;
+        var translatex = -index * showswidth;
+        ul.style.transition = 'all .3s';
+        ul.style.transform = 'translateX(' +translatex+ 'px)';
+      }, 3000);
+      
+      
+    ul.addEventListener('transitionend', function () {
+      if (index >=3) {
+          index = 0;
+          ul.style.transition = 'none';
+          var translatex = -index * showswidth;
+          ul.style.transform = 'translateX(' + translatex + 'px)';
+      } else if (index < 0) {
+        index = 2;
+        ul.style.transition = 'none';
+        var translatex = -index * showswidth;
+        ul.style.transform = 'translateX(' + translatex + 'px)';
+        }
+
+        ol.querySelector('.slidedot').classList.remove('slidedot');
+        ol.children[index].classList.add('slidedot');
+    })
+
+  var startpositon = 0;
+  var endpositon = 0;
+  var fingermove = false;
+  ul.addEventListener('touchstart', function (e) {
+    startpositon = e.targetTouches[0].pageX;
+    clearInterval(timer);
+  })
+  
+  ul.addEventListener('touchmove', function (e) {
+    fingermove = true; 
+    endpositon = e.targetTouches[0].pageX - startpositon;
+    var translatex = -index * showswidth + endpositon;
+    ul.style.transition = 'none';
+    ul.style.transform = 'translateX(' + translatex + 'px)';  
+    e.preventDefault(); 
+  })
+
+  ul.addEventListener('touchend', function (e) {
+    if (fingermove=true) {
+      if (Math.abs(endpositon) > 50) {
+        if (endpositon > 0) {
+            index--;
+        } else {
+            index++;
+        }
+        var translatex = -index * showswidth;
+        ul.style.transition = 'all .3s';
+        ul.style.transform = 'translateX(' + translatex + 'px)';
+      } else {
+      var translatex = -index * showswidth;
+      ul.style.transition = 'all .1s';
+      ul.style.transform = 'translateX(' + translatex + 'px)';
+      }
+    }
+    
+      timer = setInterval(function () {
+      index++;
+      var translatex = -index * showswidth;
+      ul.style.transition = 'all .3s';
+      ul.style.transform = 'translateX(' + translatex + 'px)';
+      }, 3000);
+    })
+  })
+  </script>
+
+ 
+  <div class="indexcards">
+      <div class="indexcard" >
+        <a href="readpage1.html"><img src="https://pic.imgdb.cn/item/660a8e729f345e8d03655df9.png">
+            <p class="indexcardtitle">了解心脏病预防的小知识</p>
+            <p class="indexcardout">健康中国  2024-03-11</p>
+        </a>
+        <!-- <img src="images/index-shoucang.png" class="indexcardshoucang"> -->
+        <!-- <p class="indexcardcorner">
+          <span style="margin-right: 2vw;"> <img src="logo/chakan.svg" style="margin-right: 1vw;">123</span> 
+          <span> <img src="logo/dianzan.svg" style="margin-right: 1vw;">169 </span>
+        </p> -->
+      </div>
+
+      <div class="indexcard">
+        <a href="readpage2.html"><img src="https://pic.imgdb.cn/item/660aa3079f345e8d03e8a266.png">
+            <p class="indexcardtitle">抗生素的使用问题与解答</p>
+            <p class="indexcardout">医学动态  2024-03-11</p>
+        </a>
+        
+      </div>
+
+      <div class="indexcard">
+        <a href="readpage3.html"><img src="https://pic.imgdb.cn/item/660a8e719f345e8d03655826.png">
+            <p class="indexcardtitle">高血压的症状和原因</p>
+            <p class="indexcardout">健康中国  2024-03-11</p>
+        </a>
+        
+      </div>
+
+      <div class="indexcard">
+        <a href="readpage4.html"><img src="https://pic.imgdb.cn/item/660a8e729f345e8d03655a3a.png">
+            <p class="indexcardtitle">科学预防脑卒中</p>
+            <p class="indexcardout">医学动态  2024-03-11</p>
+        </a>
+        
+      </div>
+
+  </div>
+
+<div class="bottomtext">已经到底了···</div>
+
+
+</body>
+
+</html>

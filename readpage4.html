@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>科学预防脑卒中</title>
+    <link rel="stylesheet" type="text/css" href="css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/readpage.css">
+    <style></style>
+    
+</head>
+
+<body>
+    <div class="topbar"> 
+    <a href="index.html" class="iconback"><img src="https://pic.imgdb.cn/item/660828209f345e8d03958aa8.png"></a>
+    <!-- <h1 class="toptitle">了解心脏病的小知识了解心脏病的小知识</h1> -->
+    </div>
+
+    <div><img src="https://pic.imgdb.cn/item/660aa1f89f345e8d03e0c921.png" class="toppicture">
+    </div> 
+    <div class="upboy"><img src="https://pic.imgdb.cn/item/660aa7f69f345e8d0310de98.png">
+      <p>医学动态  2024-03-11</p>
+  </div> 
+    <div class="unittitle"><h1>科学预防脑卒中</h1></div>
+    
+    <script>
+     window.addEventListener('scroll',function(){ 
+     let topbar = document.querySelector('.topbar');
+     if(window.scrollY>0)
+       {topbar.classList.add("change");
+       }
+     else{ topbar.classList.remove("change");
+       }})
+       
+      /*  window.addEventListener('scroll',function(){ 
+     let toptitle = document.querySelector('.toptitle');
+     if(window.scrollY>360)
+       {toptitle.style.visibility="visible"
+       }
+     else{toptitle.style.visibility="hidden"
+       }}) */
+
+       
+    </script>
+
+
+    <div class="content">
+        <h1>什么是脑卒中?</h1>
+        <p>脑卒中也称为“中风”，这种病是由于大脑里面的血管突然发生破裂出血或因血管堵塞造成大脑缺血、缺氧而引起。</p>
+        <h1>脑卒中严重危害中老年人</h1>
+        <p>有我国脑卒中每年新发病例约200万人，每年死于脑卒中超过150万人，而在存活的患者中，约75%～80%会留有不同程度的残疾，其中重度残疾超过40％，并且约有1/4至1/3可能在2至5年内复发。脑卒中已成为严重危害我国中老年人健康的主要疾病。</p>
+        <h1>脑卒中的早期识别方法</h1>
+        <p>脑卒中的早期识别至关重要，下面是识别脑卒中的简易方法：<br/>
+            <ul>
+            <li>让患者微笑一下：如患者微笑的时候面部不对称，一侧不能微笑，出现面瘫。</li>
+            <li>让患者抬手或抬腿：如果患者卧位时双手45°抬举无法坚持10 秒而下降，或腿部抬举30°无法坚持5 秒而下降，视为肢体力弱。</li>
+            <li>让患者说一句较长的话：如果说话困难、找不着词或者家属理解困难，则有语言障碍。</li>
+            <li>当具有脑卒中危险因素（例如高血压、心脏病、<a class="annotation">糖尿病</a>、高血脂等）的人出现上述表现时，高度怀疑脑卒中，应立即送往医院救治。</li>
+           </ul> 
+        </p>
+        <h1>脑卒中的就医指导 </h1>
+        <p>有在发现脑卒中的早期征兆后，应该第一时间到医院寻求诊治。脑卒中治疗非常强调就医时机，正常脑组织在缺血3小时后就可能出现不可逆变化，6小时后则缺血脑细胞出现坏死。如果病人在3～6小时内施以治疗，就可能在脑细胞没有出现完全梗死之前，恢复氧供和血供，从而恢复全部或部分功能。这是目前惟一行之有效的治疗方案。</p>   
+    </div>
+
+    <div class="popup">
+        <div class="popbox">
+          <!--   <img src="images\readpage\read_popup.png" class="popcard"> -->
+            <img src="https://pic.imgdb.cn/item/660828209f345e8d03958aa8.png" class="backbutton">
+            <h1 class="poptitle">糖尿病</h1>
+            <p class="popparagraph">糖尿病是一种以高血糖为特征的代谢性疾病。高血糖则是由于胰岛素分泌缺陷或其生物作用受损引起。长期存在的高血糖，导致各种组织，特别是眼、肾、心脏、血管、神经的慢性损害、功能障碍。</p>
+        </div>
+        
+
+    </div>
+
+    <script>
+        document.querySelector(".annotation").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="flex"
+            document.querySelector("body").style.overflow="hidden"
+        })
+
+        document.querySelector(".backbutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none"
+            document.querySelector("body").style.overflow="visible"
+        })
+    </script>
+
+    </div>  
+
+
+    <div class="bottomtext">已经到底了···</div>
+
+</body>
+
+</html>

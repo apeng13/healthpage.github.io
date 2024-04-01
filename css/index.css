@@ -1,0 +1,167 @@
+
+div {
+    position: relative;
+    max-width: 100vw;
+  }
+  
+img {
+    height: auto;
+    width: 100vw;
+  }
+
+.topbar{
+    width: 100vw;
+    height: 11vw;
+    padding-top:5vw;
+    padding-bottom:5vw;
+    margin-bottom: 5vw;
+
+  }
+
+.indexinput{
+    position: absolute;
+    height: auto;
+    width: 90vw;
+    left: 5vw;
+}
+
+.indextitlecard{
+    width: 90vw;
+    height: auto;
+    padding-top:0vw;
+    padding-bottom:0vw;
+    margin-left: 5vw;
+}
+
+.index_titlecard{
+    width: 40vw;
+    height: auto;
+    padding-top:0vw;
+    padding-bottom:0vw; 
+}
+
+.indexmine{
+    position: absolute;
+    height: 10vw;
+    width: auto;
+    right: 0px;
+}
+
+.indexslideshow{
+    position:relative;
+    height: auto;
+    width: 100vw;
+    /* left: 5vw; */
+    overflow: hidden;
+    padding-bottom: 7vw;
+}
+
+
+.indexslideshow img{
+    width: 100%;
+    top: 0px;
+}
+
+.indexslideshow ul {
+    overflow: hidden;
+    width: 500%;
+    margin-left: -100%;  
+}
+
+.indexslideshow ul li {
+    float: left;
+    width: 20%;
+}
+.indexslideshow ol {
+    position: absolute;
+    top: 56.5vw;
+    left: 28vw;
+}
+
+.indexslideshow ol li {
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    background-color: #A2B1FF;
+    list-style: none;
+    margin-left: 1vw;
+    border-radius: 3vw;
+    transition: all .4s;
+
+}
+
+.indexslideshow ol li.slidedot {
+    width: 15vw;
+}
+
+
+.indexcards{
+    /* left: 5vw; */
+    width: 100vw; 
+    margin-top: 2vw;   
+}
+
+.indexcard{
+    padding-top:0vw;
+    padding-bottom:0vw;
+    position: relative;
+}
+
+.indexcardtitle{
+    position: absolute;
+    left: 5vw;
+    bottom: 9vw;
+    font-size: 19pt;
+    font-weight: 300;
+    letter-spacing:2pt;
+    color: #000000;
+}
+
+.indexcardout{
+    position: absolute;
+    left: 5vw;
+    bottom: 2vw;
+    font-size: 15pt;
+    font-weight: 300;
+    letter-spacing:1.6pt;
+    color: #545454;
+}
+
+.indexcardshoucang{
+    position: absolute;
+    height: 7vw;
+    width: auto;
+    right: 5vw;
+    top: 5vw;
+}
+
+.indexcardcorner{
+    position: absolute;
+    right: 5vw;
+    bottom: 18vw;
+    font-size: 14px;
+    color: #808080;
+    vertical-align: middle;
+       
+}
+
+.indexcardcorner img{
+    height: 19px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.bottomtext{
+    text-align: center;
+    font-size: 16pt;
+    color: #7086FF;
+    padding-top: 2vw;
+    padding-bottom: 6vw;
+    width: 90vw;
+    left: 5vw;
+    line-height: 28pt;
+    letter-spacing:2pt;
+}
+
+
+
